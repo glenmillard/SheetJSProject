@@ -1,5 +1,7 @@
 <html>
 <head>
+// These are the CDNs for jQuery and XLSX
+// it seems to behave better when I use this instead of local
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
@@ -10,6 +12,8 @@
         
         <input type="file" id="input-excel" />
 </div>
+//I plagerized the below script. It is supposed to allow us to 
+//upload an XLS file and display it in the browser - but I'm kinda lost
 <script>
         $('#input-excel').change(function(e){
                 var reader = new FileReader();
